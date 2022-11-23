@@ -1,0 +1,34 @@
+.loginform {
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+  margin: 100px auto;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.addTodos {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  .todo-input {
+    margin-right: 2rem;
+    padding: 1rem;
+    border: 1px solid lightblue;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+  input[type="text"]:focus {
+    background-color: lightblue;
+    border-radius: 1rem;
+  }
+  button {
+    padding: 0.25rem 1.5rem;
+    background-color: lightpink;
+    border-radius: 0.75rem;
+    border-color: azure;
+    cursor: pointer;
+  }
+}

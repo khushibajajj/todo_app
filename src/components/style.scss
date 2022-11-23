@@ -1,0 +1,155 @@
+.form-header {
+  text-align: center;
+  font-family: "open sans", sans-serif;
+  padding: 2rem 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  max-width: 100%;
+}
+
+.row input {
+  width: 80%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  box-shadow: inset 0px -3px 0px 0px rgba(187, 187, 187, 0.2);
+  transition: box-shadow 0.2s ease-in;
+}
+
+.row input:focus {
+  box-shadow: inset 0px -3px 0px 0px rgba(34, 193, 195, 0.7);
+  outline: none;
+}
+
+.row input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+}
+
+.row input:hover::-webkit-input-placeholder,
+.row input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.row label {
+  align-self: start;
+  padding-left: 4.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(187, 187, 187, 0.9);
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+
+  .button {
+    margin: 2rem;
+    padding: 0.5rem 2rem;
+    background-color: yellow;
+    border-radius: 0.5rem;
+    border-color: azure;
+    cursor: pointer;
+  }
+}
+
+.body {
+  background-color: #fac945;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  margin-top: 150px;
+  font-size: 17px;
+  color: #4b4d54;
+  overflow: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.dropdown {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.dropdown-header {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-body {
+  padding: 5px;
+  border-top: 1px solid #e5e8ec;
+  display: none;
+}
+
+.dropdown-body.open {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+.dropdown-item-dot {
+  opacity: 0;
+  color: #91a5be;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item-dot.selected {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 13px;
+  color: #91a5be;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.icon.open {
+  transform: rotate(90deg);
+}
+
+.todo-list-card {
+  border: 1px solid antiquewhite;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: cornsilk;
+  button {
+    padding: 0.25rem 1.5rem;
+    background-color: crimson;
+    color: white;
+    font-size: inherit;
+    border-radius: 0.75rem;
+    border-color: azure;
+    cursor: pointer;
+    height: 3rem;
+  }
+}
+
+button {
+  padding: 0.5rem 1.2rem;
+  background-color: aliceblue;
+  font-size: inherit;
+  border-radius: 0.75rem;
+  border-color: azure;
+  cursor: pointer;
+}
